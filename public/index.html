@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>伸び代アセスメント（プロトタイプ）</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="header-top">
+      <h1>伸び代アセスメント</h1>
+      <a href="/admin" class="admin-link">管理画面 →</a>
+    </div>
+    <p class="subtitle">現在の能力ではなく「今後どこまで伸びる可能性があるか」を判定するプロトタイプです。</p>
+    <div id="demoBanner" class="demo-banner hidden">
+      デモ判定モードで動作中です（ANTHROPIC_API_KEY未設定）。回答の文字数・具体性ワードによる簡易判定のため、実際のAI採点とは精度が異なります。
+    </div>
+    <p class="sample-note">見本データが自動で入力されています。内容を書き換えて自分の回答として採点することもできます。</p>
+    <button type="button" id="sampleBtn" class="sample-button">見本データに戻す</button>
+  </header>
+
+  <main>
+    <form id="assessmentForm"></form>
+    <div id="result" class="result hidden"></div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
