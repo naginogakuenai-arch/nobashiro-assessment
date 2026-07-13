@@ -178,6 +178,14 @@ header h1 {
   font-size: 0.95rem;
 }
 
+.purpose-notice {
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-left: 3px solid var(--accent);
+  padding: 4px 10px;
+  margin: 8px 0 12px;
+}
+
 .demo-banner {
   background: var(--warn-bg);
   border: 1px solid var(--warn-border);
